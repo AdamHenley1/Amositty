@@ -21,20 +21,20 @@
 	    grid-row-gap: 1rem;
         width: 100%;
     }
-    .box1{
+    .Gridbox{
         min-width: fit-content;
         min-height: 100px;
         border-radius: 5%;
         padding: 2%;
     }
-    .box1 img{
+    .Gridbox img{
         width: 20%;
         height:20%;
     }
-    .box1 span{
+    .Gridbox span{
         font-size: 1rem;
     }
-    .box1 p{
+    .Gridbox p{
         font-size: 0.7rem;
     }
     

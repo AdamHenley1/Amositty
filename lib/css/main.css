@@ -6,25 +6,24 @@
 	box-sizing: border-box;
 	font-family: 'Exo 2', sans-serif;
 }
+
+/* Variable names */
 :root 
 {
-	--navbar-colour: rgba(0, 0, 0, 0.3);
-	--navsvg: #e9e9e9;
-	--shadow: rgb(9, 9, 9);
-  	--link: rgb(27, 129, 112);
-  	--link-hover: rgb(24, 94, 82);
-	--text-light: rgb(209, 209, 209);
-	--Grey: #252525;
+	--navbar-colour: #333333;
+	--text: #e0e0e0;
+	--background: #121212;
 }
-body
+
+/* Main Body Config */
+body 
 {
 	height: 100%;
 	width: 100%;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	padding: 20px 0 0 0;
-	background-color: black;
-	color: black;
+	background-color: var(--background);
 	user-select: none;
 	scroll-behavior: smooth;
 	-ms-touch-action: manipulation;
@@ -32,6 +31,9 @@ body
 	scrollbar-width: none;
 }
 
+/* NavBar items */
+
+/* navbar itself */
 nav
 {
 	position: fixed;
@@ -40,24 +42,29 @@ nav
 	width: 100%;
 	height: 50px;
 	padding: 5px 20px;
-	background-color: #252525;
+	background-color: var(--navbar-colour);
 	z-index: 20;
 
 }
+
+/* settings button on nav for both mobile and pc */
 nav button{
 	float:right;
 	position: relative;
 	height:50px;
 	width: 50px;
 	z-index: 20;
+	background-color: var(--navbar-colour);
 }
+
+/* Title on navbar */
 nav span
 {
 	position: absolute;
 	width: fit-content;
 	line-height: 40px;
 	font-weight: bold;
-	color: var(--navsvg);
+	color: var(--text);
 	box-sizing: border-box;
 	font-family: 'Exo 2', sans-serif;
 	margin: 0 5px;
@@ -65,11 +72,13 @@ nav span
 	transition: 0.2s;
 	left: 70px;
 }
+
+/* all other logos including logo icon, portfolio and the about me */
 nav a
 {
 	position: relative;
 	height: fit-content;
-	background-color: #252525;
+	background-color: var(--navbar-colour);
 }
 nav a svg
 {
@@ -86,8 +95,8 @@ nav a svg
 	align-items: center;
 	border-radius: 5px;
 	transition: 0.2s;
-	fill: var(--navsvg);
-	background-color: #252525;
+	fill: var(--text);
+	background-color: var(--navbar-colour);
 	z-index: 20;
 }
 .indexlogo::before{
@@ -96,8 +105,8 @@ nav a svg
 	white-space: nowrap;
 	content: "AMOSITTY";
 	text-decoration: none;
-	background-color:#1b1b1b;
-	color: var(--text-light);
+	background-color:#222222;
+	color: var(--text);
 	position: absolute;
 	top: -5px;
 	left: -30px;
@@ -125,7 +134,7 @@ nav a svg
 	height: 50px;
 	transform: scaleY(0);
 	transform-origin: bottom;
-	background-color: #444;
+	background-color: #888888;
 	position: absolute;
 	top: -5px;
 	right: 10px;
@@ -157,7 +166,7 @@ nav button svg {
 	align-items: center;
 	border-radius: 5px;
 	transition: 0.2s;
-	fill: var(--navsvg);
+	fill: var(--text);
 	border: hidden;
 
   }
@@ -169,23 +178,19 @@ nav button svg {
 }
   
 .settings::after{
-	font-size: 12px;
-	white-space: nowrap;
-	content: "Settings";
-	text-decoration: none;
-	background-color:#101010;
-	color: var(--text-light);
-	font-weight: bold;
-	padding: 5px 5px 5px 5px;
 	position: absolute;
+	padding: 6px 6px 6px 6px;
 	top: 90px;
 	left: -10px;
-	pointer-events: none;
-	border-radius: 2px;
-	z-index: 9999;
+	border-radius: 0.5em;
+	font-size: 12px;
+	content: "Settings";
+	background-color:#222222;
+	color: var(--text);
+	font-weight: bold;
 	opacity: 0;
 	visibility: hidden;
-	transition: 150ms;
+	transition: 125ms;
 	transition-timing-function: ease-out;
 }
 .settings:hover::after{
@@ -211,6 +216,10 @@ nav button svg {
 }
 
 
+
+
+
+
 .art_logo{
 	width: 180px;
 	height: 180px;
@@ -231,7 +240,7 @@ nav button svg {
 	position: relative;
 	top: 20%;
 }
-.notfound{
+.Portfolio_Title{
 	top: 50%;
 	font-size: 55px;
 	color: white;
@@ -265,6 +274,8 @@ nav button svg {
 .gridtitle{
 	position: relative;
 	color: white;
+	padding: 1% 1% 1% 1%;
+
 }
 .parentbox{
 	position: relative;
@@ -277,32 +288,37 @@ nav button svg {
 	overflow: scroll;
 	overflow: hidden;
 }
-.box1{
+.Gridbox{
 	color: #e9e9e9;
 	min-width: 200px;
 	min-height: 160px;
+	max-height: 160px;
 	background-color: #0a0a0a90;
 	border-radius: 5%;
 	padding: 3%;
 }
-.box1 img{
+.Gridbox img{
 	position: relative;
 	width: 25%;
 	height:25%;
 	border-radius: 0.5em;
 }
-.box1 span{
+.Gridbox span{
 	position: relative;
 	display: block;
 	font-weight: bold;
 	font-size: 1.2rem;
 }
-.box1 p{
+.Gridbox p{
+	width: 250px;
 	box-sizing: border-box;
 	font-family: 'Exo 2', sans-serif;
-	color: gray;
+	color: rgb(158, 158, 158);
+	position: relative;
+	top: -125px;
+	left: 27%;
 }
-.box1:hover{
+.Gridbox:hover{
 	background-color: #4e4e4e5b;
 }
 
@@ -330,13 +346,11 @@ nav button svg {
 	width: 100%;
 	top: 50px;
 	z-index: 9;
-	background-image: linear-gradient(to top,black, rgb(0, 10, 40));
+	background-color: var(--background);
 	transform-origin: top;
 	transform: translateY(100%);
 	border-radius: 0 0 2em 2em;
 	transition: 550ms ease;
-	text-decoration-color: black;
-	color: black;
 	opacity: 0;
 	visibility: hidden;
 }
@@ -370,7 +384,7 @@ nav button svg {
 	background-color: black;
 	border-radius: 0 0 2em 2em;
 	transform-origin: top;
-	transform: translateX(1000%) translateY();
+	transform: translateX(100%);
 	text-decoration-color: black;
 	color: black;
 	opacity: 0;
@@ -410,23 +424,19 @@ nav button svg {
 }
   
 .menu::after{
-	font-size: 12px;
-	white-space: nowrap;
-	content: "menu";
-	text-decoration: none;
-	background-color:#101010;
-	color: var(--text-light);
-	font-weight: bold;
-	padding: 5px 5px 5px 5px;
 	position: absolute;
+	padding: 6px 6px 6px 6px;
 	top: 90px;
-	left: -10px;
-	pointer-events: none;
-	border-radius: 2px;
-	z-index: 9999;
+	left: -5px;
+	border-radius: 0.5em;
+	font-size: 12px;
+	content: "Menu";
+	background-color:#222222;
+	color: var(--text);
+	font-weight: bold;
 	opacity: 0;
 	visibility: hidden;
-	transition: 150ms;
+	transition: 125ms;
 	transition-timing-function: ease-out;
 }
 .menu:hover::after{
@@ -445,26 +455,54 @@ nav button svg {
 	top: 0px;
 }
 .AboutMebutton::after{
-	font-size: 12px;
-	white-space: nowrap;
-	content: "About Me";
-	text-decoration: none;
-	background-color:#101010;
-	color: var(--text-light);
-	font-weight: bold;
-	padding: 5px 5px 5px 5px;
 	position: absolute;
+	padding: 6px 6px 6px 6px;
 	top: 90px;
 	left: -10px;
-	pointer-events: none;
-	border-radius: 2px;
-	z-index: 9999;
+	border-radius: 0.5em;
+	font-size: 12px;
+	content: "About Me";
+	background-color:#222222;
+	color: var(--text);
+	font-weight: bold;
 	opacity: 0;
 	visibility: hidden;
-	transition: 150ms;
+	transition: 125ms;
 	transition-timing-function: ease-out;
+	white-space: nowrap;
 }
 .AboutMebutton:hover::after{
+	transform: translateY(-40px);
+	opacity: 1;
+	visibility: visible;
+}
+.portfolio{
+	position: relative;
+	height: 38px;
+	width: 55px;
+	padding: 0px;
+	float: right;
+	left: 0px;
+	top: 0px;
+}
+.portfolio::after{
+	position: absolute;
+	padding: 6px 6px 6px 6px;
+	top: 90px;
+	left: -10px;
+	border-radius: 0.5em;
+	font-size: 12px;
+	content: "Portfolio";
+	background-color:#222222;
+	color: var(--text);
+	font-weight: bold;
+	opacity: 0;
+	visibility: hidden;
+	transition: 125ms;
+	transition-timing-function: ease-out;
+	white-space: nowrap;
+}
+.portfolio:hover::after{
 	transform: translateY(-40px);
 	opacity: 1;
 	visibility: visible;
@@ -478,12 +516,12 @@ nav button svg {
 	height: fit-content;
 	min-height: 275px ;
 	min-width: 200px;
-	top: 10%;
+	top: 7%;
 	color: #e9e9e9;
 	padding: 1em;
-	width: 50%;
-	height: 75%;
-	background-color:var(--Grey);
+	width: 75%;
+	height: 100%;
+	background-color:#222222;
 	border-radius: 30px;
 }
 .PFP{
