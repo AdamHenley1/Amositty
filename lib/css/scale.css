@@ -22,8 +22,10 @@
         width: 100%;
     }
     .Gridbox{
-        min-width: fit-content;
-        min-height: 100px;
+        min-width: 100px;
+	    min-height: 50px;
+	    max-height: 50px;
+	    max-width: 100px;
         border-radius: 5%;
         padding: 2%;
     }
@@ -32,10 +34,10 @@
         height:20%;
     }
     .Gridbox span{
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     .Gridbox p{
-        font-size: 0.7rem;
+        visibility: hidden;
     }
     
     

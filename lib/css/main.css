@@ -10,6 +10,7 @@
 /* Variable names */
 :root 
 {
+	--fade_amount: 15%;
 	--navbar-colour: #333333;
 	--text: #e0e0e0;
 	--background: #121212;
@@ -290,12 +291,14 @@ nav button svg {
 }
 .Gridbox{
 	color: #e9e9e9;
-	min-width: 200px;
+	min-width: fit-content;
 	min-height: 160px;
 	max-height: 160px;
+	max-width: 200px;
 	background-color: #0a0a0a90;
 	border-radius: 5%;
 	padding: 3%;
+
 }
 .Gridbox img{
 	position: relative;
@@ -310,13 +313,13 @@ nav button svg {
 	font-size: 1.2rem;
 }
 .Gridbox p{
-	width: 250px;
+	position: flex;
+	min-width: 50px;
 	box-sizing: border-box;
 	font-family: 'Exo 2', sans-serif;
 	color: rgb(158, 158, 158);
-	position: relative;
-	top: -125px;
-	left: 27%;
+	margin-top: -32%;
+	margin-left: 40%;
 }
 .Gridbox:hover{
 	background-color: #4e4e4e5b;
