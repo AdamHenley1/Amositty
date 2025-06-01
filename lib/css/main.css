@@ -294,7 +294,7 @@ nav button svg {
 	min-width: fit-content;
 	min-height: 160px;
 	max-height: 160px;
-	max-width: 200px;
+	max-width: 300px;
 	background-color: #0a0a0a90;
 	border-radius: 5%;
 	padding: 3%;
@@ -307,19 +307,22 @@ nav button svg {
 	border-radius: 0.5em;
 }
 .Gridbox span{
-	position: relative;
-	display: block;
+	position:relative;
+	display: flex;
+	left: 35%;
+	top: -40px;
 	font-weight: bold;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
 .Gridbox p{
-	position: flex;
-	min-width: 50px;
+	position: relative;
+	left: 0%;
+	top: -30px;
+	display: flex;
+	width: fit-content;
 	box-sizing: border-box;
 	font-family: 'Exo 2', sans-serif;
 	color: rgb(158, 158, 158);
-	margin-top: -32%;
-	margin-left: 40%;
 }
 .Gridbox:hover{
 	background-color: #4e4e4e5b;
