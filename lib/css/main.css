@@ -366,13 +366,13 @@ nav button svg {
 	margin-left: auto;
   	margin-right: auto;
 	height: fit-content;
-	min-height: 275px ;
+	min-height: 600px;
+	max-height: fit-content;
 	min-width: 200px;
 	top: 7%;
 	color: #e9e9e9;
 	padding: 1em;
 	width: 75%;
-	height: 100%;
 	background-color:#222222;
 	border-radius: 30px;
 }
@@ -559,6 +559,7 @@ text-shadow:1px 1px 1px rgba(0,0,0,0.3);
 }
 .aboutme_text{
 	position: absolute;
+	font-size: small;
 	left: 540px;
 	top: 10px;
 }

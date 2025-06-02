@@ -39,6 +39,14 @@
     .Gridbox p{
         visibility: hidden;
     }
-    
-    
+    .PFP{
+        height: 164px;
+        width: 200px;
+    }
+    .aboutme_text{
+        position: relative;
+        font-size: small;
+        left: 5px;
+        top: 10px;
+    }
 }
