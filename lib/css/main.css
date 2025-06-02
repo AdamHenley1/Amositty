@@ -393,6 +393,21 @@ nav button svg {
 	width: 30px;
 }
 
+.aboutme_text{
+	position: absolute;
+	font-size: small;
+	left: 540px;
+	top: 10px;
+}
+
+.AboutMebox svg{
+	position: relative;
+	left: 10px;
+	top: 5px;
+	height: 30px;
+	width: 30px;
+}
+
 
 
 .timeline{
@@ -556,18 +571,4 @@ text-shadow:1px 1px 1px rgba(0,0,0,0.3);
   	background-color:#444950;
   	text-align:right;
   	font-style:italic;
-}
-.aboutme_text{
-	position: absolute;
-	font-size: small;
-	left: 540px;
-	top: 10px;
-}
-
-.AboutMebox svg{
-	position: relative;
-	left: 10px;
-	top: 5px;
-	height: 30px;
-	width: 30px;
 }
