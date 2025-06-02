@@ -151,54 +151,7 @@ nav a svg
 nav button svg {
 	height: 30px;
 }
-.settings
-{
-	position: relative;
-	background:transparent;
-	border-color: transparent;
-	height: 38px;
-	width: 38px;
-	padding: 5px;
-	float: right;
-	left: 0px;
-	top: 1px;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 5px;
-	transition: 0.2s;
-	fill: var(--text);
-	border: hidden;
 
-  }
-.settings:hover svg{
-	animation: loading-spinner 7s linear infinite;
-}
-.settings:hover{
-	background-color: #00000080;
-}
-  
-.settings::after{
-	position: absolute;
-	padding: 6px 6px 6px 6px;
-	top: 90px;
-	left: -10px;
-	border-radius: 0.5em;
-	font-size: 12px;
-	content: "Settings";
-	background-color:#222222;
-	color: var(--text);
-	font-weight: bold;
-	opacity: 0;
-	visibility: hidden;
-	transition: 125ms;
-	transition-timing-function: ease-out;
-}
-.settings:hover::after{
-	transform: translateY(-40px);
-	opacity: 1;
-	visibility: visible;
-}
 
 #sping{
 	position: relative;
@@ -344,112 +297,6 @@ nav button svg {
 	text-align: center;
 }
 
-.settings_display
-{
-	position: fixed; 
-	display: block;
-	height: calc(100% - 50px);
-	width: 100%;
-	top: 50px;
-	z-index: 9;
-	background-color: var(--background);
-	transform-origin: top;
-	transform: translateY(100%);
-	border-radius: 0 0 2em 2em;
-	transition: 550ms ease;
-	opacity: 0;
-	visibility: hidden;
-}
-.settings_display.anim
-{
-	opacity: 1;
-	transform: translateY(0);
-	visibility: visible;
-}
-.settings_box{
-	position: fixed; 
-	top: 150px;
-	height: fit-content;
-	z-index: 99999;
-	background-color: rgb(58, 58, 58);
-	border-radius: 0.5em 0.5em 0.5em 0.5em;
-	padding: 10px;
-	text-align: center;
-	left: 50%;
-	transform: translateX(-50%);
-	color: rgb(0, 0, 0);
-}
-.menu_display
-{
-	position: fixed; 
-	display: block;
-	right: 0;
-	height: 100%;
-	width: 50%;
-	top: 50px;
-	background-color: black;
-	border-radius: 0 0 2em 2em;
-	transform-origin: top;
-	transform: translateX(100%);
-	text-decoration-color: black;
-	color: black;
-	opacity: 0;
-	pointer-events: none;
-	z-index: 10000;
-	transition: 550ms ease;
-}
-.menu_display.anims
-{
-	opacity: 1;
-	transform: translateX(0);
-	visibility: visible;
-}
-.menu
-{
-	position: relative;
-	background:transparent;
-	border-color: transparent;
-	height: 38px;
-	width: 38px;
-	padding: 5px;
-	float: right;
-	left: 40px;
-	top: 1px;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 5px;
-	transition: 0.2s;
-	fill: var(--navsvg);
-	border: hidden;
-	visibility: hidden;
-
-  }
-.menu:hover{
-	background-color: #00000080;
-}
-  
-.menu::after{
-	position: absolute;
-	padding: 6px 6px 6px 6px;
-	top: 90px;
-	left: -5px;
-	border-radius: 0.5em;
-	font-size: 12px;
-	content: "Menu";
-	background-color:#222222;
-	color: var(--text);
-	font-weight: bold;
-	opacity: 0;
-	visibility: hidden;
-	transition: 125ms;
-	transition-timing-function: ease-out;
-}
-.menu:hover::after{
-	transform: translateY(-40px);
-	opacity: 1;
-	visibility: visible;
-}
 
 .AboutMebutton{
 	position: relative;
@@ -457,7 +304,7 @@ nav button svg {
 	width: 20px;
 	padding: 0px;
 	float: right;
-	left: 0px;
+	margin-right: 15px;
 	top: 0px;
 }
 .AboutMebutton::after{
@@ -515,7 +362,6 @@ nav button svg {
 }
 
 .AboutMebox{
-	
 	position: relative;
 	margin-left: auto;
   	margin-right: auto;
@@ -533,44 +379,19 @@ nav button svg {
 .PFP{
 	position: relative;
 	display: block;
-	margin-left: auto;
-  	margin-right: auto;
-	width: 125px;
-	height:125px;
-	border-radius: 4em;
+	width: 500px;
+	height:320px;
+	border-radius: 1.2em;
 }
 .AboutMebox span{
-	display: table;
+	display: block;
     margin: 0 auto;
 	font-weight: bold;
 }
 .AboutMebox a{
-	position: relative;
-	display: table;
-    margin: 0 auto;
-	font-weight: bold;
-	font-size: 0.7rem;
+	height: 30px;
+	width: 30px;
 }
-.AboutMebox a:link {
-	color: rgb(255, 255, 255);
-	
-	background-color: transparent;
-	text-decoration: none;
-  }
-  
-.AboutMebox a:visited {
-	color: rgb(255, 255, 255);
-	background-color: transparent;
-	text-decoration: none;
-  }
-.AboutMebox p{
-	padding-top: 1% ;
-	display: table;
-    margin: 0 auto;
-
-}
-
-
 
 
 
@@ -590,22 +411,22 @@ nav button svg {
 	background: -webkit-linear-gradient(left, rgba(138,145,150,1) 0%,rgba(122,130,136,1) 60%,rgba(98,105,109,1) 100%);
 	background: linear-gradient(to right, rgba(138,145,150,1) 0%,rgba(122,130,136,1) 60%,rgba(98,105,109,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a9196', endColorstr='#62696d',GradientType=1 );
-  left:14px;
-  top:5x;
-  border-radius:4px;
+  	left:14px;
+  	top:5x;
+  	border-radius:4px;
 }
 
 .timeline-month{
 	color: var(--text);
-  position:relative;
-  padding:4px 15px 4px 35px;
-  background-color:#444950;
-  display:inline-block;
-  width:auto;
-  border-radius:40px;
-  border:1px solid #17191B;
-  border-right-color:black;
-  margin-bottom:30px;
+  	position:relative;
+  	padding:4px 15px 4px 35px;
+  	background-color:#444950;
+  	display:inline-block;
+  	width:auto;
+  	border-radius:40px;
+  	border:1px solid #17191B;
+  	border-right-color:black;
+  	margin-bottom:30px;
 }
 
 .timeline-month span{
@@ -625,18 +446,19 @@ nav button svg {
 }
 
 .timeline-month:before{
-  position:absolute;
-  content:'';
-  width:20px;
-  height:20px;
-background: rgb(138,145,150);
-background: -moz-linear-gradient(top, rgba(138,145,150,1) 0%, rgba(122,130,136,1) 60%, rgba(112,120,125,1) 100%);
-background: -webkit-linear-gradient(top, rgba(138,145,150,1) 0%,rgba(122,130,136,1) 60%,rgba(112,120,125,1) 100%);
-background: linear-gradient(to bottom, rgba(138,145,150,1) 0%,rgba(122,130,136,1) 60%,rgba(112,120,125,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a9196', endColorstr='#70787d',GradientType=0 );
-  border-radius:100%;
-  border:1px solid #17191B;
-  left:5px;
+  	position:absolute;
+  	content:'';
+  	width:20px;
+  	height:20px;
+	background: rgb(138,145,150);
+	background: -moz-linear-gradient(top, rgb(116, 148, 125) 0%, rgb(130, 177, 144) 60%, rgb(109, 139, 117) 100%);
+	background: -webkit-linear-gradient(top, rgb(116, 148, 125) 0%, rgb(130, 177, 144) 60%, rgb(109, 139, 117) 100%);
+	background: linear-gradient(to bottom, rgb(116, 148, 125) 0%, rgb(130, 177, 144) 60%, rgb(109, 139, 117) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a9196', endColorstr='#70787d',GradientType=0 );
+  	border-radius:100%;
+  	border:1px solid #17191B;
+  	left:5px;
+	top: 2px;
 }
 
 .timeline-section{
@@ -729,9 +551,22 @@ text-shadow:1px 1px 1px rgba(0,0,0,0.3);
 
 .box-footer{
 	color: var(--text);
- padding:5px 15px;
-  border-top: 1px solid #17191B;
-  background-color:#444950;
-  text-align:right;
-  font-style:italic;
+ 	padding:5px 15px;
+  	border-top: 1px solid #17191B;
+  	background-color:#444950;
+  	text-align:right;
+  	font-style:italic;
+}
+.aboutme_text{
+	position: absolute;
+	left: 540px;
+	top: 10px;
+}
+
+.AboutMebox svg{
+	position: relative;
+	left: 10px;
+	top: 5px;
+	height: 30px;
+	width: 30px;
 }
